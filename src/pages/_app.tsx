@@ -1,5 +1,6 @@
-import { ChallengesProvider } from '../contexts/challengesContext'
-import { useState } from 'react'
+import React from 'react'
+import { ChallengesProvider } from '../contexts/ChallengesContext'
+
 
 
 import '../styles/global.css'
@@ -7,7 +8,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChallengesProvider>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </ChallengesProvider>
   )
 }
